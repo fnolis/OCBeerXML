@@ -1,4 +1,4 @@
 OCBeerXML
 =========
 
-A BeerXML parse written in Objective-C
+A BeerXML parser written in Objective-C

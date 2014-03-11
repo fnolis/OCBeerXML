@@ -2,8 +2,6 @@
 #import "OCBeerXml.h"
 #include "BXHop.h"
 
-#import <objc/runtime.h>
-
 @interface BeerXmlHopsTests : XCTestCase
 
 @end

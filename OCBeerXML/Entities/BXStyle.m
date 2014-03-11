@@ -42,7 +42,7 @@
 	self.ingredients = [self objectInDictionary:data forTag:BXTagStyleIngredients required:NO error:error];
 	self.examples = [self objectInDictionary:data forTag:BXTagStyleExamples required:NO error:error];
 	
-	if( *error )
+	if( error && *error )
 		self = nil;
 	
 	return self;

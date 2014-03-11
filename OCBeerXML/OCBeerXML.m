@@ -37,7 +37,7 @@
 					if( error && *error ) break;
 				}
 			} else if ([[[data objectForKey:BXTagRecipes] objectForKey:BXTagRecipe] isKindOfClass:[NSDictionary class]] ){ // one
-				bxrecipe = [BXRecipe recipeFromDictionary:[[data objectForKey:BXTagRecipes] objectForKey:BXTagRecipe] error:&xmlerror];
+				bxrecipe = [BXRecipe recipeFromDictionary:[[data objectForKey:BXTagRecipes] objectForKey:BXTagRecipe] error:error];
 				
 				if( bxrecipe)
 					[recipes addObject:bxrecipe];

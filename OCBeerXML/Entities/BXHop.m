@@ -28,7 +28,7 @@
 	self.cohumulone = [[self objectInDictionary:data forTag:BXTagHopCohumulone required:NO error:error] floatValue];
 	self.myrcene = [[self objectInDictionary:data forTag:BXTagHopMyrcene required:NO error:error] floatValue];
 		
-	if( *error )
+	if( error && *error )
 		self = nil;
 	
 	return self;

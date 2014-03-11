@@ -1,6 +1,7 @@
 #import "BXObject.h"
 #import "BXStyle.h"
 #import "BXHops.h"
+#import "BXFermentables.h"
 
 @interface BXRecipe : BXObject
 
@@ -16,6 +17,7 @@
 @property (nonatomic, assign) float boilTime;
 //EFFICIENCY
 @property (nonatomic, retain) BXHops *hops;
+@property (nonatomic, retain) BXFermentables *fermentables;
 //...
 @property (nonatomic, retain) NSString *notes;
 @property (nonatomic, retain) NSString *tasteNotes;

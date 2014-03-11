@@ -1,30 +1,30 @@
-#import "BXHops.h"
-#import "BXHop.h"
+#import "BXFermentables.h"
+#import "BXFermentable.h"
 #import "BXXmlTags.h"
 #import "OCBeerXML.h"
 
-@interface BXHops()
+@interface BXFermentables()
 @property (nonatomic, retain) NSMutableArray *objects;
 @end
 
-@implementation BXHops
+@implementation BXFermentables
 
-+ (BXHops*)hopsFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXHops *object = [[BXHops alloc] init];
++ (BXFermentables*)fermentablesFromDictionary:(NSDictionary*)data error:(NSError**)error {
+	BXFermentables *object = [[BXFermentables alloc] init];
 	
-	if ([[data objectForKey:BXTagHop] isKindOfClass:[NSArray class]] ){ // many
-		for (NSDictionary *o in [data objectForKey:BXTagHop]) {
+	if ([[data objectForKey:BXTagFermentable] isKindOfClass:[NSArray class]] ){ // many
+		for (NSDictionary *o in [data objectForKey:BXTagFermentable]) {
 			[object addObjectFromDictionary:o error:error];
 			if( error && *error ) break;
 		}
-	} else if ([[data objectForKey:BXTagHop] isKindOfClass:[NSDictionary class]] ){ // one
-		[object addObjectFromDictionary:[data objectForKey:BXTagHop] error:error];
+	} else if ([[data objectForKey:BXTagFermentable] isKindOfClass:[NSDictionary class]] ){ // one
+		[object addObjectFromDictionary:[data objectForKey:BXTagFermentable] error:error];
 	}
 	
 	if( error && *error ) {
 		object = nil;
 	}
-	
+
 	return object;
 }
 
@@ -39,7 +39,7 @@
 }
 
 - (void)addObjectFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXHop *object = [BXHop hopFromDictionary:data error:error];
+	BXFermentable *object = [BXFermentable fermentableFromDictionary:data error:error];
 	
 	if( object )
 		[self.objects addObject:object];

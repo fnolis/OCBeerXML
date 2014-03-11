@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BXRecipe.h"
+#import "BXFermentables.h"
+//TODO: Add all entities here.
 
 #define BeerXMLErrorDomain @"BeerXMLErrorDomain"
 #define BeerXMLErrorRequiredTagMissing	800
+#define BeerXMLErrorUnknownError		1701
 
 @interface OCBeerXML : NSObject
 

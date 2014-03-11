@@ -24,6 +24,7 @@
 	self.boilTime = [[self objectInDictionary:data forTag:BXTagRecipeBoilTime required:YES error:error] floatValue];
 	//EFFICIENCY
 	self.hops = [BXHops hopsFromDictionary:[data objectForKey:BXTagHops] error:error];
+	self.fermentables = [BXFermentables fermentablesFromDictionary:[data objectForKey:BXTagFermentables] error:error];
 	//...
 	self.notes = [self objectInDictionary:data forTag:BXTagRecipeNotes required:NO error:error];
 	self.tasteNotes = [self objectInDictionary:data forTag:BXTagRecipeTasteNotes required:NO error:error];
@@ -45,7 +46,7 @@
 
 
 	
-	if( *error )
+	if( error && *error )
 		self = nil;
 	
 	return self;

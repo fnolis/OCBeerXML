@@ -7,6 +7,8 @@
 #define BXTagHops @"HOPS"
 #define BXTagHop @"HOP"
 #define BXTagStyle @"STYLE"
+#define BXTagFermentables @"FERMENTABLES"
+#define BXTagFermentable @"FERMENTABLE"
 
 // RECIPE
 #define BXTagRecipeVersion @"VERSION"
@@ -69,6 +71,25 @@
 #define BXTagStyleProfile @"PROFILE"
 #define BXTagStyleIngredients @"INGREDIENTS"
 #define BXTagStyleExamples @"EXAMPLES"
+
+// FERMENTABLES
+#define BXTagFermentableName @"NAME"
+#define BXTagFermentableVersion @"VERSION"
+#define BXTagFermentableType @"TYPE"
+#define BXTagFermentableAmount @"AMOUNT"
+#define BXTagFermentableYield @"YIELD"
+#define BXTagFermentableColor @"COLOR"
+#define BXTagFermentableAddAfterBoil @"ADD_AFTER_BOIL"
+#define BXTagFermentableOrigin @"ORIGIN"
+#define BXTagFermentableSupplier @"SUPPLIER"
+#define BXTagFermentableNotes @"NOTES"
+#define BXTagFermentableCoarseFineDiff @"COARSE_FINE_DIFF"
+#define BXTagFermentableMoisture @"MOISTURE"
+#define BXTagFermentableDiastaticPower @"DIASTATIC_POWER"
+#define BXTagFermentableProtein @"PROTEIN"
+#define BXTagFermentableMaxInBatch @"MAX_IN_BATCH"
+#define BXTagFermentableRecommendMash @"RECOMMEND_MASH"
+#define BXTagFermentableIBUGalPerLB @"IBU_GAL_PER_LB"
 
 // HOP
 #define BXTagHopName @"NAME"

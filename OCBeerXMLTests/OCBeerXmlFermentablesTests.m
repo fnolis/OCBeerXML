@@ -2,8 +2,7 @@
 #import "OCBeerXML.h"
 
 @interface OCBeerXmlFermentablesTests : XCTestCase
-@property (nonatomic, retain) NSArray *recipes;
-@property (nonatomic, retain) BXFermentable *fermentable;
+
 @end
 
 
@@ -24,12 +23,14 @@
 	
 	BXFermentables *ferms = [(BXRecipe*)rs[0] fermentables];
 	XCTAssertTrue(ferms.count == 3, @"Fermentable count is wrong");
-	
+
+	/*
 	for( int i = 0; ferms.count > i; ++i ) {
 		BXFermentable *f = [ferms objectAtIndex:i];
 		NSLog(@"%@",f.name);
 		NSLog(@"%d",f.version);
 	}
+	 */
 }
 
 - (void)testOneFermentableWithoutName {

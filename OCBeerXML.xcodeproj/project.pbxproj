@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AE0BC98B18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */; };
+		AE753FCB18D0416900EC9A2F /* BXEquipments.m in Sources */ = {isa = PBXBuildFile; fileRef = AE753FCA18D0416900EC9A2F /* BXEquipments.m */; };
+		AE753FCE18D0418000EC9A2F /* BXEquipment.m in Sources */ = {isa = PBXBuildFile; fileRef = AE753FCD18D0418000EC9A2F /* BXEquipment.m */; };
+		AE753FD118D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */; };
 		AE9C703B18CDAA81009FCE0B /* BXFermentable.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9C703A18CDAA81009FCE0B /* BXFermentable.m */; };
 		AE9C703E18CDB0C6009FCE0B /* BXFermentables.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9C703D18CDB0C6009FCE0B /* BXFermentables.m */; };
 		AEE009F418C64B7E0042F849 /* BXHop.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009ED18C64B7E0042F849 /* BXHop.m */; };
@@ -56,6 +59,11 @@
 
 /* Begin PBXFileReference section */
 		AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBeerXmlFermentablesTests.m; sourceTree = "<group>"; };
+		AE753FC918D0416900EC9A2F /* BXEquipments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXEquipments.h; sourceTree = "<group>"; };
+		AE753FCA18D0416900EC9A2F /* BXEquipments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXEquipments.m; sourceTree = "<group>"; };
+		AE753FCC18D0418000EC9A2F /* BXEquipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXEquipment.h; sourceTree = "<group>"; };
+		AE753FCD18D0418000EC9A2F /* BXEquipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXEquipment.m; sourceTree = "<group>"; };
+		AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBeerXmlEquipmentsTests.m; sourceTree = "<group>"; };
 		AE9C703918CDAA81009FCE0B /* BXFermentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXFermentable.h; sourceTree = "<group>"; };
 		AE9C703A18CDAA81009FCE0B /* BXFermentable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXFermentable.m; sourceTree = "<group>"; };
 		AE9C703C18CDB0C6009FCE0B /* BXFermentables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXFermentables.h; sourceTree = "<group>"; };
@@ -128,6 +136,10 @@
 				AEE009F318C64B7E0042F849 /* BXRecipe.m */,
 				AEE00A0B18C6636B0042F849 /* BXStyle.h */,
 				AEE00A0C18C6636B0042F849 /* BXStyle.m */,
+				AE753FC918D0416900EC9A2F /* BXEquipments.h */,
+				AE753FCA18D0416900EC9A2F /* BXEquipments.m */,
+				AE753FCC18D0418000EC9A2F /* BXEquipment.h */,
+				AE753FCD18D0418000EC9A2F /* BXEquipment.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -206,6 +218,7 @@
 				AEE009FC18C64C180042F849 /* OCBeerXmlHopsTests.m */,
 				AEE009FD18C64C180042F849 /* OCBeerXmlRecipeTests.m */,
 				AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */,
+				AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */,
 				AEEB8D9518C64921001ECA10 /* Supporting Files */,
 			);
 			path = OCBeerXMLTests;
@@ -304,7 +317,9 @@
 			files = (
 				AEE00A0918C64CFB0042F849 /* XmlReader.m in Sources */,
 				AE9C703B18CDAA81009FCE0B /* BXFermentable.m in Sources */,
+				AE753FCB18D0416900EC9A2F /* BXEquipments.m in Sources */,
 				AEE00A0D18C6636B0042F849 /* BXStyle.m in Sources */,
+				AE753FCE18D0418000EC9A2F /* BXEquipment.m in Sources */,
 				AEEB8D8618C64921001ECA10 /* OCBeerXML.m in Sources */,
 				AE9C703E18CDB0C6009FCE0B /* BXFermentables.m in Sources */,
 			);
@@ -322,6 +337,7 @@
 				AE0BC98B18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m in Sources */,
 				AEE009F618C64B7E0042F849 /* BXObject.m in Sources */,
 				AEE009FF18C64C180042F849 /* OCBeerXmlRecipeTests.m in Sources */,
+				AE753FD118D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m in Sources */,
 				AEE009F518C64B7E0042F849 /* BXHops.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

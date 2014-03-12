@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BXRecipe.h"
 #import "BXFermentables.h"
+#import "BXEquipments.h"
 //TODO: Add all entities here.
 
 #define BeerXMLErrorDomain @"BeerXMLErrorDomain"

@@ -32,10 +32,10 @@
 	// RECIPE
 	BXRecipe *recipe = [self.recipes objectAtIndex:0];
 	XCTAssertTrue([recipe.name isEqualToString:@"Dry Stout"], @"Recipe name is '%@', should be 'Dry Stout'", recipe.name);
-	XCTAssertTrue(recipe.version == 1, @"Version is '%d', should be '1'",recipe.version);
-	XCTAssertTrue([recipe.type isEqualToString:@"All Grain"], @"Type is '%@', should be 'All Grain'",recipe.type);
-	XCTAssertTrue(recipe.batchSize == 18.93f, @"Batch size is '%f', should be 18.93",recipe.batchSize);
-	XCTAssertTrue(recipe.boilSize == 20.82f, @"Boil size is '%f', should be 20.82",recipe.boilSize);
+	XCTAssertTrue(recipe.version == 1, @"Version is '%d', should be '1'", recipe.version);
+	XCTAssertTrue([recipe.type isEqualToString:@"All Grain"], @"Type is '%@', should be 'All Grain'", recipe.type);
+	XCTAssertTrue(recipe.batchSize == 18.93f, @"Batch size is '%f', should be 18.93", recipe.batchSize);
+	XCTAssertTrue(recipe.boilSize == 20.82f, @"Boil size is '%f', should be 20.82", recipe.boilSize);
 	XCTAssertTrue([recipe.brewer isEqualToString:@"Brad Smith"], @"Brewer is '%@', should be 'Brad Smith'", recipe.brewer);
 	XCTAssertTrue(recipe.boilTime == 60.0f, @"Boil time is not correct");
 	XCTAssertTrue([recipe.notes isEqualToString:@"Famous Irish Stout."], @"Notes '%@' is not correct",recipe.notes);
@@ -45,18 +45,18 @@
 	XCTAssertTrue(recipe.age == 24.0f, @"Age is not correct");
 	XCTAssertTrue(recipe.ageTemperature == 17.0f, @"Age temperature is not correct");
 	XCTAssertTrue([recipe.date isEqualToString:@"3 Jan 04"], @"Date is not correct");
-	XCTAssertTrue(recipe.carbonation == 2.1f, @"Carbonation is '%f', should be 2.1",recipe.carbonation);
+	XCTAssertTrue(recipe.carbonation == 2.1f, @"Carbonation is '%f', should be 2.1", recipe.carbonation);
 }
 
 - (void)testRecipeStyle {
 	// STYLE
 	BXStyle *style = self.recipe.style;
-	XCTAssertTrue([style.name isEqualToString:@"Dry Stout"], @"Style name is '%@', should be 'Dry Stout'",style.name);
-	XCTAssertTrue([style.category isEqualToString:@"Stout"], @"Category is '%@', should be 'Stout'",style.category);
+	XCTAssertTrue([style.name isEqualToString:@"Dry Stout"], @"Style name is '%@', should be 'Dry Stout'", style.name);
+	XCTAssertTrue([style.category isEqualToString:@"Stout"], @"Category is '%@', should be 'Stout'", style.category);
 	XCTAssertTrue([style.categoryNumber isEqualToString:@"16"], @"Style category name is wrong");
-	XCTAssertTrue([style.letter isEqualToString:@"A"], @"Style letter is '%@, should be 'A'",style.letter);
-	XCTAssertTrue([style.guide isEqualToString:@"BJCP"], @"Style guide is '%@, should be 'BJCP'",style.letter);
-	XCTAssertTrue(style.minimumABV == 3.2f, @"Min ABV is '%f', should be '3.2'",style.minimumABV);
+	XCTAssertTrue([style.letter isEqualToString:@"A"], @"Style letter is '%@, should be 'A'", style.letter);
+	XCTAssertTrue([style.guide isEqualToString:@"BJCP"], @"Style guide is '%@, should be 'BJCP'", style.letter);
+	XCTAssertTrue(style.minimumABV == 3.2f, @"Min ABV is '%f', should be '3.2'", style.minimumABV);
 	XCTAssertTrue(style.maximumABV == 5.5f, @"Max ABV is not correct");
 	XCTAssertTrue(style.minimumIBU == 30.0f, @"Min IBU is not correct");
 	XCTAssertTrue(style.maximumIBU == 50.0f, @"Max IBU is not correct");
@@ -65,14 +65,7 @@
 - (void)testRecipeFermentables {
 	BXFermentables *fermentables = self.recipe.fermentables;
 	
-	XCTAssertTrue(fermentables.count == 3, @"Fermentable count is  '%d', should be '3'",fermentables.count);
-	
-	
-	for (int i = 0;  fermentables.count > i; ++i ) {
-		BXFermentable *f = [fermentables objectAtIndex:i];
-		NSLog(@"Name %@",f.name);
-	}
-	
+	XCTAssertTrue(fermentables.count == 3, @"Fermentable count is  '%d', should be '3'", fermentables.count);
 }
 
 - (void)testRecipeHops {

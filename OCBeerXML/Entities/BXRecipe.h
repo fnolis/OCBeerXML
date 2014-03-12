@@ -2,6 +2,7 @@
 #import "BXStyle.h"
 #import "BXHops.h"
 #import "BXFermentables.h"
+#import "BXEquipments.h"
 
 @interface BXRecipe : BXObject
 
@@ -9,7 +10,7 @@
 @property (nonatomic, assign) int version;
 @property (nonatomic, retain) NSString *type;
 @property (nonatomic, retain) BXStyle *style;
-//EQUIPMENT - optional
+@property (nonatomic, retain) BXEquipments *equipments;
 @property (nonatomic, retain) NSString *brewer;
 @property (nonatomic, retain) NSString *assistantBrewer;
 @property (nonatomic, assign) float batchSize;

@@ -16,7 +16,7 @@
 	self.version = [[self objectInDictionary:data forTag:BXTagRecipeVersion required:YES error:error] intValue];
 	self.type = [self objectInDictionary:data forTag:BXTagRecipeType required:YES error:error];
 	self.style = [BXStyle styleFromDictionary:[data objectForKey:BXTagStyle] error:error];
-	//EQUIPMENT
+	self.equipments = [BXEquipments equipmentsFromDictionary:[data objectForKey:BXTagEquipments] error:error];
 	self.brewer = [self objectInDictionary:data forTag:BXTagRecipeBrewer required:YES error:error];
 	self.assistantBrewer = [self objectInDictionary:data forTag:BXTagRecipeAssistantBrewer required:NO error:error];
 	self.batchSize = [[self objectInDictionary:data forTag:BXTagRecipeBatchSize required:YES error:error] floatValue];

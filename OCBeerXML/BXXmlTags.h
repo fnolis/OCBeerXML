@@ -9,6 +9,8 @@
 #define BXTagStyle @"STYLE"
 #define BXTagFermentables @"FERMENTABLES"
 #define BXTagFermentable @"FERMENTABLE"
+#define BXTagEquipments @"EQUIPMENTS"
+#define BXTagEquipment @"EQUIPMENT"
 
 // RECIPE
 #define BXTagRecipeVersion @"VERSION"
@@ -90,6 +92,24 @@
 #define BXTagFermentableMaxInBatch @"MAX_IN_BATCH"
 #define BXTagFermentableRecommendMash @"RECOMMEND_MASH"
 #define BXTagFermentableIBUGalPerLB @"IBU_GAL_PER_LB"
+
+// EQUIPMENT
+#define BXTagEquipmentName @"NAME"
+#define BXTagEquipmentVersion @"VERSION"
+#define BXTagEquipmentBoilSize @"BOIL_SIZE"
+#define BXTagEquipmentBatchSize @"BATCH_SIZE"
+#define BXTagEquipmentTunVolume @"TUN_VOLUME"
+#define BXTagEquipmentTunWeight @"TUN_WEIGHT"
+#define BXTagEquipmentTunSpecificHeat @"TUN_SPECIFIC_HEAT"
+#define BXTagEquipmentTopUpWater @"TOP_UP_WATER"
+#define BXTagEquipmentTrubChillerLoss @"TRUB_CHILLER_LOSS"
+#define BXTagEquipmentEvapRate @"EVAP_RATE"
+#define BXTagEquipmentBoilTime @"BOIL_TIME"
+#define BXTagEquipmentCalcBoilVolume @"CALC_BOIL_VOLUME"
+#define BXTagEquipmentLauterDeadspace @"LAUTER_DEADSPACE"
+#define BXTagEquipmentTopUpKettle @"TOP_UP_KETTLE"
+#define BXTagEquipmentHopUtilization @"HOP_UTILIZATION"
+#define BXTagEquipmentNotes @"NOTES"
 
 // HOP
 #define BXTagHopName @"NAME"

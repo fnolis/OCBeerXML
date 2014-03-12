@@ -16,14 +16,15 @@
 @property (nonatomic, assign) float batchSize;
 @property (nonatomic, assign) float boilSize;
 @property (nonatomic, assign) float boilTime;
-//EFFICIENCY
+@property (nonatomic, assign) float efficiency;
 @property (nonatomic, retain) BXHops *hops;
 @property (nonatomic, retain) BXFermentables *fermentables;
 //...
 @property (nonatomic, retain) NSString *notes;
 @property (nonatomic, retain) NSString *tasteNotes;
 @property (nonatomic, assign) float tasteRating;
-//...
+@property (nonatomic, assign) float originalGravity;
+@property (nonatomic, assign) float finalGravity;
 @property (nonatomic, assign) int fermentationStages;
 @property (nonatomic, assign) float primaryAge;
 @property (nonatomic, assign) float primaryTemperature;

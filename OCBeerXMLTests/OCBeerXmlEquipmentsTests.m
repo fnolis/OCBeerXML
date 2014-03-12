@@ -29,7 +29,6 @@
 	XCTAssertTrue(equipment.batchSize == 18.927168f,@"Batch size is '%f', should be '18.927168'", equipment.batchSize);
 	XCTAssertTrue(equipment.boilTime == 60.0f,@"Boil time is '%f', should be '60.0'", equipment.batchSize);
 	XCTAssertTrue(equipment.calculateBoilVolume == YES,@"Calculate boil time is'%d', should be 'YES'", equipment.calculateBoilVolume);
-	
 }
 
 @end

@@ -25,6 +25,12 @@
 	BXMisc *misc = [miscs objectAtIndex:0];
 	
 	XCTAssertTrue([misc.name isEqualToString:@"Irish Moss"], @"Misc name is '%@', should be 'Irish Moss'", misc.name);
+	XCTAssertTrue(misc.version == 1, @"Version is '%d', should be '1'", misc.version);
+	XCTAssertTrue([misc.type isEqualToString:@"Fining"], @"Misc type is '%@', should be 'Fining'", misc.type);
+	XCTAssertTrue([misc.use isEqualToString:@"Boil"], @"Misc use is '%@', should be 'Boil'", misc.use);
+	XCTAssertTrue(misc.time == 15.0f, @"Misc time is '%f', should be '15.0'", misc.time);
+	XCTAssertTrue(misc.amount == 0.010f, @"Misc amount is '%f', should be '0.010'", misc.amount);
+	XCTAssertTrue([misc.notes isEqualToString:@"Used as a clarifying agent during the last few minutes of the boil"], @"Misc notes is incorrect");
 }
 
 @end

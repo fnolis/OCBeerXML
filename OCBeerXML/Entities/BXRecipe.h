@@ -1,6 +1,7 @@
 #import "BXObject.h"
 #import "BXStyle.h"
 #import "BXHops.h"
+#import "BXMiscs.h"
 #import "BXFermentables.h"
 #import "BXEquipments.h"
 
@@ -20,6 +21,7 @@
 @property (nonatomic, retain) BXHops *hops;
 @property (nonatomic, retain) BXFermentables *fermentables;
 //...
+@property (nonatomic, retain) BXMiscs *miscellaneous;
 @property (nonatomic, retain) NSString *notes;
 @property (nonatomic, retain) NSString *tasteNotes;
 @property (nonatomic, assign) float tasteRating;

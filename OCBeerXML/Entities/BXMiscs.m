@@ -1,24 +1,23 @@
-#import "BXHops.h"
-#import "BXHop.h"
+#import "BXMiscs.h"
 #import "BXXmlTags.h"
 #import "OCBeerXML.h"
 
-@interface BXHops()
+@interface BXMiscs()
 @property (nonatomic, retain) NSMutableArray *objects;
 @end
 
-@implementation BXHops
+@implementation BXMiscs
 
-+ (BXHops*)hopsFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXHops *object = [[BXHops alloc] init];
++ (BXMiscs*)miscsFromDictionary:(NSDictionary*)data error:(NSError**)error {
+	BXMiscs *object = [[BXMiscs alloc] init];
 	
-	if ([[data objectForKey:BXTagHop] isKindOfClass:[NSArray class]] ){ // many
-		for (NSDictionary *o in [data objectForKey:BXTagHop]) {
+	if ([[data objectForKey:BXTagMisc] isKindOfClass:[NSArray class]] ){ // many
+		for (NSDictionary *o in [data objectForKey:BXTagMisc]) {
 			[object addObjectFromDictionary:o error:error];
 			if( error && *error ) break;
 		}
-	} else if ([[data objectForKey:BXTagHop] isKindOfClass:[NSDictionary class]] ){ // one
-		[object addObjectFromDictionary:[data objectForKey:BXTagHop] error:error];
+	} else if ([[data objectForKey:BXTagMisc] isKindOfClass:[NSDictionary class]] ){ // one
+		[object addObjectFromDictionary:[data objectForKey:BXTagMisc] error:error];
 	}
 	
 	if( error && *error ) {
@@ -39,7 +38,7 @@
 }
 
 - (void)addObjectFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXHop *object = [BXHop hopFromDictionary:data error:error];
+	BXMisc *object = [BXMisc miscFromDictionary:data error:error];
 	
 	if( object )
 		[self.objects addObject:object];
@@ -51,7 +50,7 @@
 	return self.objects.count;
 }
 
-- (BXHop*)objectAtIndex:(NSUInteger)index {
+- (BXMisc*)objectAtIndex:(NSUInteger)index {
 	return [self.objects objectAtIndex:index];
 }
 

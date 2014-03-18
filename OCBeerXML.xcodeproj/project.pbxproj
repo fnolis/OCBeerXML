@@ -13,6 +13,9 @@
 		AE753FD118D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */; };
 		AE9C703B18CDAA81009FCE0B /* BXFermentable.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9C703A18CDAA81009FCE0B /* BXFermentable.m */; };
 		AE9C703E18CDB0C6009FCE0B /* BXFermentables.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9C703D18CDB0C6009FCE0B /* BXFermentables.m */; };
+		AEC8DF4218D82AD50088094D /* BXMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4118D82AD50088094D /* BXMisc.m */; };
+		AEC8DF4518D838C30088094D /* BXMiscs.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4418D838C30088094D /* BXMiscs.m */; };
+		AEC8DF4818D83C140088094D /* OCBeerXmlMiscsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4718D83C140088094D /* OCBeerXmlMiscsTests.m */; };
 		AEE009F418C64B7E0042F849 /* BXHop.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009ED18C64B7E0042F849 /* BXHop.m */; };
 		AEE009F518C64B7E0042F849 /* BXHops.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009EF18C64B7E0042F849 /* BXHops.m */; };
 		AEE009F618C64B7E0042F849 /* BXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009F118C64B7E0042F849 /* BXObject.m */; };
@@ -68,6 +71,11 @@
 		AE9C703A18CDAA81009FCE0B /* BXFermentable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXFermentable.m; sourceTree = "<group>"; };
 		AE9C703C18CDB0C6009FCE0B /* BXFermentables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXFermentables.h; sourceTree = "<group>"; };
 		AE9C703D18CDB0C6009FCE0B /* BXFermentables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXFermentables.m; sourceTree = "<group>"; };
+		AEC8DF4018D82AD50088094D /* BXMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXMisc.h; sourceTree = "<group>"; };
+		AEC8DF4118D82AD50088094D /* BXMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXMisc.m; sourceTree = "<group>"; };
+		AEC8DF4318D838C30088094D /* BXMiscs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXMiscs.h; sourceTree = "<group>"; };
+		AEC8DF4418D838C30088094D /* BXMiscs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXMiscs.m; sourceTree = "<group>"; };
+		AEC8DF4718D83C140088094D /* OCBeerXmlMiscsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBeerXmlMiscsTests.m; sourceTree = "<group>"; };
 		AEE009EA18C64B740042F849 /* BXXmlTags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXXmlTags.h; sourceTree = "<group>"; };
 		AEE009EC18C64B7E0042F849 /* BXHop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHop.h; sourceTree = "<group>"; };
 		AEE009ED18C64B7E0042F849 /* BXHop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHop.m; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 				AE753FCA18D0416900EC9A2F /* BXEquipments.m */,
 				AE753FCC18D0418000EC9A2F /* BXEquipment.h */,
 				AE753FCD18D0418000EC9A2F /* BXEquipment.m */,
+				AEC8DF4018D82AD50088094D /* BXMisc.h */,
+				AEC8DF4118D82AD50088094D /* BXMisc.m */,
+				AEC8DF4318D838C30088094D /* BXMiscs.h */,
+				AEC8DF4418D838C30088094D /* BXMiscs.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -219,6 +231,7 @@
 				AEE009FD18C64C180042F849 /* OCBeerXmlRecipeTests.m */,
 				AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */,
 				AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */,
+				AEC8DF4718D83C140088094D /* OCBeerXmlMiscsTests.m */,
 				AEEB8D9518C64921001ECA10 /* Supporting Files */,
 			);
 			path = OCBeerXMLTests;
@@ -316,11 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEE00A0918C64CFB0042F849 /* XmlReader.m in Sources */,
+				AEC8DF4218D82AD50088094D /* BXMisc.m in Sources */,
 				AE9C703B18CDAA81009FCE0B /* BXFermentable.m in Sources */,
 				AE753FCB18D0416900EC9A2F /* BXEquipments.m in Sources */,
 				AEE00A0D18C6636B0042F849 /* BXStyle.m in Sources */,
 				AE753FCE18D0418000EC9A2F /* BXEquipment.m in Sources */,
 				AEEB8D8618C64921001ECA10 /* OCBeerXML.m in Sources */,
+				AEC8DF4518D838C30088094D /* BXMiscs.m in Sources */,
 				AE9C703E18CDB0C6009FCE0B /* BXFermentables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +354,7 @@
 				AEE009FF18C64C180042F849 /* OCBeerXmlRecipeTests.m in Sources */,
 				AE753FD118D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m in Sources */,
 				AEE009F518C64B7E0042F849 /* BXHops.m in Sources */,
+				AEC8DF4818D83C140088094D /* OCBeerXmlMiscsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

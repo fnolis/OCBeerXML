@@ -11,6 +11,8 @@
 #define BXTagFermentable @"FERMENTABLE"
 #define BXTagEquipments @"EQUIPMENTS"
 #define BXTagEquipment @"EQUIPMENT"
+#define BXTagMiscs @"MISCS"
+#define BXTagMisc @"MISC"
 
 // RECIPE
 #define BXTagRecipeVersion @"VERSION"
@@ -129,5 +131,18 @@
 #define BXTagHopCaryophyllene @"CARYOPHYLLENE"
 #define BXTagHopCohumulone @"COHUMULONE"
 #define BXTagHopMyrcene @"MYRCENE"
+
+// MISC
+#define BXTagMiscName @"NAME"
+#define BXTagMiscVersion @"VERSION"
+#define BXTagMiscType @"TYPE"
+#define BXTagMiscUse @"USE"
+#define BXTagMiscTime @"TIME"
+#define BXTagMiscAmount @"AMOUNT"
+#define BXTagMiscAmountIsWeight @"AMOUNT_IS_WEIGHT"
+#define BXTagMiscUseFor @"USE_FOR"
+#define BXTagMiscNotes @"NOTES"
+
+
 
 #endif

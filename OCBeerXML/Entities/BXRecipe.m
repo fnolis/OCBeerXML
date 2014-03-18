@@ -25,7 +25,7 @@
 	self.efficiency = [[self objectInDictionary:data forTag:BXTagRecipeEfficiency required:NO error:error] floatValue]; //TODO: Conditional required.
 	self.hops = [BXHops hopsFromDictionary:[data objectForKey:BXTagHops] error:error];
 	self.fermentables = [BXFermentables fermentablesFromDictionary:[data objectForKey:BXTagFermentables] error:error];
-	// MISCS
+	self.miscellaneous = [BXMiscs miscsFromDictionary:[data objectForKey:BXTagMiscs] error:error];
 	// YEASTS
 	// WATERS
 	// MASH

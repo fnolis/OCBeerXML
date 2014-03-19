@@ -1,5 +1,4 @@
 #import "BXEquipment.h"
-#import "BXXmlTags.h"
 
 @implementation BXEquipment
 

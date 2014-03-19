@@ -1,5 +1,4 @@
 #import "BXMisc.h"
-#import "BXXmlTags.h"
 
 @implementation BXMisc
 

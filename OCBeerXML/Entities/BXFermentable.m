@@ -1,5 +1,4 @@
 #import "BXFermentable.h"
-#import "BXXmlTags.h"
 
 @implementation BXFermentable
 

@@ -1,22 +1,22 @@
-#import "BXEquipments.h"
+#import "BXWaters.h"
 #import "OCBeerXML.h"
 
-@interface BXEquipments()
+@interface BXWaters()
 @property (nonatomic, retain) NSMutableArray *objects;
 @end
 
-@implementation BXEquipments
+@implementation BXWaters
 
-+ (BXEquipments*)equipmentsFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXEquipments *object = [[BXEquipments alloc] init];
++ (BXWaters*)watersFromDictionary:(NSDictionary*)data error:(NSError**)error {
+	BXWaters *object = [[BXWaters alloc] init];
 	
-	if ([[data objectForKey:BXTagEquipment] isKindOfClass:[NSArray class]] ){ // many
-		for (NSDictionary *o in [data objectForKey:BXTagEquipment]) {
+	if ([[data objectForKey:BXTagWater] isKindOfClass:[NSArray class]] ){ // many
+		for (NSDictionary *o in [data objectForKey:BXTagWater]) {
 			[object addObjectFromDictionary:o error:error];
 			if( error && *error ) break;
 		}
-	} else if ([[data objectForKey:BXTagEquipment] isKindOfClass:[NSDictionary class]] ){ // one
-		[object addObjectFromDictionary:[data objectForKey:BXTagEquipment] error:error];
+	} else if ([[data objectForKey:BXTagWater] isKindOfClass:[NSDictionary class]] ){ // one
+		[object addObjectFromDictionary:[data objectForKey:BXTagWater] error:error];
 	}
 	
 	if( error && *error ) {
@@ -37,7 +37,7 @@
 }
 
 - (void)addObjectFromDictionary:(NSDictionary*)data error:(NSError**)error {
-	BXEquipment *object = [BXEquipment equipmentFromDictionary:data error:error];
+	BXWater *object = [BXWater waterFromDictionary:data error:error];
 	
 	if( object )
 		[self.objects addObject:object];
@@ -49,7 +49,7 @@
 	return self.objects.count;
 }
 
-- (BXEquipment*)objectAtIndex:(NSUInteger)index {
+- (BXWater*)objectAtIndex:(NSUInteger)index {
 	return [self.objects objectAtIndex:index];
 }
 

@@ -1,9 +1,4 @@
-#import "BXObject.h"
-#import "BXStyle.h"
-#import "BXHops.h"
-#import "BXMiscs.h"
-#import "BXFermentables.h"
-#import "BXEquipments.h"
+#import "OCBeerXML.h"
 
 @interface BXRecipe : BXObject
 
@@ -20,6 +15,7 @@
 @property (nonatomic, assign) float efficiency;
 @property (nonatomic, retain) BXHops *hops;
 @property (nonatomic, retain) BXFermentables *fermentables;
+@property (nonatomic, retain) BXWaters *waters;
 //...
 @property (nonatomic, retain) BXMiscs *miscellaneous;
 @property (nonatomic, retain) NSString *notes;

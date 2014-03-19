@@ -20,7 +20,7 @@
 	NSArray *rs = [OCBeerXML parseRecipes:xml error:&error];
 	
 	BXMiscs *miscs = [(BXRecipe*)[rs objectAtIndex:0] miscellaneous];
-	XCTAssertTrue(miscs.count == 1, @"Miscs count is '%d', should be 2", miscs.count);
+	XCTAssertTrue(miscs.count == 1, @"Miscs count is '%d', should be '1'", miscs.count);
 	
 	BXMisc *misc = [miscs objectAtIndex:0];
 	

@@ -1,6 +1,4 @@
 #import "BXFermentables.h"
-#import "BXFermentable.h"
-#import "BXXmlTags.h"
 #import "OCBeerXML.h"
 
 @interface BXFermentables()

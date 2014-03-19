@@ -13,6 +13,8 @@
 #define BXTagEquipment @"EQUIPMENT"
 #define BXTagMiscs @"MISCS"
 #define BXTagMisc @"MISC"
+#define BXTagWaters @"WATERS"
+#define BXTagWater @"WATER"
 
 // RECIPE
 #define BXTagRecipeVersion @"VERSION"
@@ -143,6 +145,17 @@
 #define BXTagMiscUseFor @"USE_FOR"
 #define BXTagMiscNotes @"NOTES"
 
-
+// WATER
+#define BXTagWaterName @"NAME"
+#define BXTagWaterVersion @"VERSION"
+#define BXTagWaterAmount @"AMOUNT"
+#define BXTagWaterCalcium @"CALCIUM"
+#define BXTagWaterBicarbonate @"BICARBONATE"
+#define BXTagWaterSulfate @"SULFATE"
+#define BXTagWaterChloride @"CHLORIDE"
+#define BXTagWaterSodium @"SODIUM"
+#define BXTagWaterMagnesium @"MAGNESIUM"
+#define BXTagWaterPh @"PH"
+#define BXTagWaterNotes @"NOTES"
 
 #endif

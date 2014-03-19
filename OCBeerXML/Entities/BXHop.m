@@ -1,5 +1,4 @@
 #import "BXHop.h"
-#import "BXXmlTags.h"
 
 @implementation BXHop
 

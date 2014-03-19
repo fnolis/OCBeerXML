@@ -1,5 +1,4 @@
 #import "BXMiscs.h"
-#import "BXXmlTags.h"
 #import "OCBeerXML.h"
 
 @interface BXMiscs()

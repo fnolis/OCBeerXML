@@ -6,15 +6,23 @@
 //  Copyright (c) 2014 Ola Rönnerup. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BXRecipe.h"
-#import "BXFermentables.h"
-#import "BXEquipments.h"
-//TODO: Add all entities here.
-
+// Define BeerXMLErrors
 #define BeerXMLErrorDomain @"BeerXMLErrorDomain"
 #define BeerXMLErrorRequiredTagMissing	800
 #define BeerXMLErrorUnknownError		1701
+
+// Import...
+#import <Foundation/Foundation.h>
+#import "BXXmlTags.h"
+// all entities...
+#import "BXEquipments.h"
+#import "BXFermentables.h"
+#import "BXHops.h"
+#import "BXMiscs.h"
+#import "BXStyle.h"
+#import "BXWaters.h"
+// ...but add recipie last.
+#import "BXRecipe.h"
 
 @interface OCBeerXML : NSObject
 
@@ -27,12 +35,5 @@
  *	@returns Returns an array with recipes as BXRecipies that was found in the XML.
  */
 + (NSArray*)parseRecipes:(NSString*)xml error:(NSError**)error;
-
-
-
-//! Unit testing...
-+ (NSArray*)parseHops:(NSString*)xml;
-+ (NSArray*)parseHops:(NSString*)xml error:(NSError**)error;
-
 
 @end

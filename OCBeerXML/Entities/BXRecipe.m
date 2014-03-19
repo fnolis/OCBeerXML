@@ -1,7 +1,6 @@
 #import "BXRecipe.h"
 #import "OCBeerXml.h"
 #import "BXHops.h"
-#import "BXXmlTags.h"
 
 @implementation BXRecipe
 
@@ -27,7 +26,7 @@
 	self.fermentables = [BXFermentables fermentablesFromDictionary:[data objectForKey:BXTagFermentables] error:error];
 	self.miscellaneous = [BXMiscs miscsFromDictionary:[data objectForKey:BXTagMiscs] error:error];
 	// YEASTS
-	// WATERS
+	self.waters = [BXWaters watersFromDictionary:[data objectForKey:BXTagWaters] error:error];
 	// MASH
 	self.notes = [self objectInDictionary:data forTag:BXTagRecipeNotes required:NO error:error];
 	self.tasteNotes = [self objectInDictionary:data forTag:BXTagRecipeTasteNotes required:NO error:error];

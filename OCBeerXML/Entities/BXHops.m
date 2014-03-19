@@ -1,6 +1,4 @@
 #import "BXHops.h"
-#import "BXHop.h"
-#import "BXXmlTags.h"
 #import "OCBeerXML.h"
 
 @interface BXHops()

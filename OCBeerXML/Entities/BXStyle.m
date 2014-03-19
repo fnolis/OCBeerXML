@@ -1,13 +1,4 @@
-//
-//  BXStyle.m
-//  OCBeerXML
-//
-//  Created by Ola Rönnerup on 04/03/14.
-//  Copyright (c) 2014 Ola Rönnerup. All rights reserved.
-//
-
 #import "BXStyle.h"
-#import "BXXmlTags.h"
 
 @implementation BXStyle
 

@@ -15,6 +15,8 @@
 #define BXTagMisc @"MISC"
 #define BXTagWaters @"WATERS"
 #define BXTagWater @"WATER"
+#define BXTagYeasts @"YEASTS"
+#define BXTagYeast @"YEAST"
 
 // RECIPE
 #define BXTagRecipeVersion @"VERSION"
@@ -157,5 +159,24 @@
 #define BXTagWaterMagnesium @"MAGNESIUM"
 #define BXTagWaterPh @"PH"
 #define BXTagWaterNotes @"NOTES"
+
+// YEAST
+#define BXTagYeastName @"NAME"
+#define BXTagYeastVersion @"VERSION"
+#define BXTagYeastType @"TYPE"
+#define BXTagYeastForm @"FORM"
+#define BXTagYeastAmount @"AMOUNT"
+#define BXTagYeastAmountIsWeight @"AMOUNT_IS_WEIGHT"
+#define BXTagYeastLaboratory @"LABORATORY"
+#define BXTagYeastProductId @"PRODUCT_ID"
+#define BXTagYeastMinTemperature @"MIN_TEMPERATURE"
+#define BXTagYeastMaxTemperature @"MAX_TEMPERATURE"
+#define BXTagYeastFlocculation @"FLOCCULATION"
+#define BXTagYeastAttenuation @"ATTENUATION"
+#define BXTagYeastNotes @"NOTES"
+#define BXTagYeastBestFor @"BEST_FOR"
+#define BXTagYeastTimeCultured @"TIME_CULTURED"
+#define BXTagYeastMaxReuse @"MAX_REUSE"
+#define BXTagYeastAddToSecondary @"ADD_TO_SECONDARY"
 
 #endif

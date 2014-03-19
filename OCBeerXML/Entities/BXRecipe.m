@@ -25,7 +25,7 @@
 	self.hops = [BXHops hopsFromDictionary:[data objectForKey:BXTagHops] error:error];
 	self.fermentables = [BXFermentables fermentablesFromDictionary:[data objectForKey:BXTagFermentables] error:error];
 	self.miscellaneous = [BXMiscs miscsFromDictionary:[data objectForKey:BXTagMiscs] error:error];
-	// YEASTS
+	self.yeasts = [BXYeasts yeastsFromDictionary:[data objectForKey:BXTagYeasts] error:error];
 	self.waters = [BXWaters watersFromDictionary:[data objectForKey:BXTagWaters] error:error];
 	// MASH
 	self.notes = [self objectInDictionary:data forTag:BXTagRecipeNotes required:NO error:error];
@@ -45,10 +45,10 @@
 	self.date = [self objectInDictionary:data forTag:BXTagRecipeDate required:NO error:error];
 	self.carbonation = [[self objectInDictionary:data forTag:BXTagRecipeCarbonation required:NO error:error] floatValue];
 	self.forcedCarbonation = [[self objectInDictionary:data forTag:BXTagRecipeForcedCarbonation required:NO error:error] boolValue];
-	// PRIMING SUGAR EQUIV
-	// CARBONATION_TEMP
-	// PRIMING_SUGAR_EQUIV
-	// KEG PRIMING FACTOR
+	self.primingSugarName = [self objectInDictionary:data forTag:BXTagRecipePrimingSugarName required:NO error:error];
+	self.carbonationTemperature = [[self objectInDictionary:data forTag:BXTagRecipeCarbonationTemperature required:NO error:error] floatValue];
+	self.primingSugarEquivalent = [[self objectInDictionary:data forTag:BXTagRecipePrimingSugarEquivalent required:NO error:error] floatValue];
+	self.kegPrimingFactor = [[self objectInDictionary:data forTag:BXTagRecipeKegPrimingFactor required:NO error:error] floatValue];
 	
 	if( error && *error )
 		self = nil;

@@ -7,7 +7,7 @@
 
 #pragma mark - Recipes
 
-+ (NSArray*)parseRecipes:(NSString*)xml error:(NSError**)error {
++ (NSArray*)parseRecipes:(NSString*)xml error:(NSError* __autoreleasing*)error {
 	NSError *xmlerror = nil;
 	NSDictionary *data = [XMLReader dictionaryForXMLString:xml error:&xmlerror];
 	NSMutableArray *recipes = nil;

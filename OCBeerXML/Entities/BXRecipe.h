@@ -16,6 +16,7 @@
 @property (nonatomic, retain) BXHops *hops;
 @property (nonatomic, retain) BXFermentables *fermentables;
 @property (nonatomic, retain) BXWaters *waters;
+@property (nonatomic, retain) BXYeasts *yeasts;
 //...
 @property (nonatomic, retain) BXMiscs *miscellaneous;
 @property (nonatomic, retain) NSString *notes;
@@ -35,9 +36,11 @@
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, assign) float carbonation;
 @property (nonatomic, assign) BOOL forcedCarbonation;
-//...
+@property (nonatomic, retain) NSString *primingSugarName;
+@property (nonatomic, assign) float carbonationTemperature;
+@property (nonatomic, assign) float primingSugarEquivalent;
+@property (nonatomic, assign) float kegPrimingFactor;
 
-
-+ (BXRecipe*)recipeFromDictionary:(NSDictionary *)data error:(NSError**)error;
++ (BXRecipe*)recipeFromDictionary:(NSDictionary *)data error:(NSError* __autoreleasing*)error;
 
 @end

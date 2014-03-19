@@ -3,7 +3,7 @@
 
 @implementation BXObject
 
-- (id)objectInDictionary:(NSDictionary*)data forTag:(NSString*)tag required:(BOOL)required error:(NSError**)error {
+- (id)objectInDictionary:(NSDictionary*)data forTag:(NSString*)tag required:(BOOL)required error:(NSError* __autoreleasing*)error {
 	if( [[data objectForKey:tag] objectForKey:@"text"] )
 		return [[data objectForKey:tag] objectForKey:@"text"];
 	else {

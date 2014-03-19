@@ -21,6 +21,7 @@
 #import "BXMiscs.h"
 #import "BXStyle.h"
 #import "BXWaters.h"
+#import "BXYeasts.h"
 // ...but add recipie last.
 #import "BXRecipe.h"
 
@@ -34,6 +35,6 @@
  *
  *	@returns Returns an array with recipes as BXRecipies that was found in the XML.
  */
-+ (NSArray*)parseRecipes:(NSString*)xml error:(NSError**)error;
++ (NSArray*)parseRecipes:(NSString*)xml error:(NSError* __autoreleasing*)error;
 
 @end

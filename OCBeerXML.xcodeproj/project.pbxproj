@@ -19,6 +19,9 @@
 		AEC8DF4B18D977DD0088094D /* BXWaters.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4A18D977DD0088094D /* BXWaters.m */; };
 		AEC8DF4E18D977E70088094D /* BXWater.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4D18D977E70088094D /* BXWater.m */; };
 		AEC8DF5018D97F1C0088094D /* OCBeerXmlWatersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF4F18D97F1C0088094D /* OCBeerXmlWatersTests.m */; };
+		AEC8DF5318D98A860088094D /* BXYeasts.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF5218D98A860088094D /* BXYeasts.m */; };
+		AEC8DF5618D98A900088094D /* BXYeast.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF5518D98A900088094D /* BXYeast.m */; };
+		AEC8DF5818D9935D0088094D /* OCBeerXmlYeastsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DF5718D9935D0088094D /* OCBeerXmlYeastsTests.m */; };
 		AEE009F418C64B7E0042F849 /* BXHop.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009ED18C64B7E0042F849 /* BXHop.m */; };
 		AEE009F518C64B7E0042F849 /* BXHops.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009EF18C64B7E0042F849 /* BXHops.m */; };
 		AEE009F618C64B7E0042F849 /* BXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE009F118C64B7E0042F849 /* BXObject.m */; };
@@ -84,6 +87,11 @@
 		AEC8DF4C18D977E70088094D /* BXWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXWater.h; sourceTree = "<group>"; };
 		AEC8DF4D18D977E70088094D /* BXWater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXWater.m; sourceTree = "<group>"; };
 		AEC8DF4F18D97F1C0088094D /* OCBeerXmlWatersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBeerXmlWatersTests.m; sourceTree = "<group>"; };
+		AEC8DF5118D98A860088094D /* BXYeasts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXYeasts.h; sourceTree = "<group>"; };
+		AEC8DF5218D98A860088094D /* BXYeasts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXYeasts.m; sourceTree = "<group>"; };
+		AEC8DF5418D98A900088094D /* BXYeast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXYeast.h; sourceTree = "<group>"; };
+		AEC8DF5518D98A900088094D /* BXYeast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXYeast.m; sourceTree = "<group>"; };
+		AEC8DF5718D9935D0088094D /* OCBeerXmlYeastsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBeerXmlYeastsTests.m; sourceTree = "<group>"; };
 		AEE009EA18C64B740042F849 /* BXXmlTags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXXmlTags.h; sourceTree = "<group>"; };
 		AEE009EC18C64B7E0042F849 /* BXHop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHop.h; sourceTree = "<group>"; };
 		AEE009ED18C64B7E0042F849 /* BXHop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHop.m; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 				AEC8DF4D18D977E70088094D /* BXWater.m */,
 				AEC8DF4918D977DD0088094D /* BXWaters.h */,
 				AEC8DF4A18D977DD0088094D /* BXWaters.m */,
+				AEC8DF5118D98A860088094D /* BXYeasts.h */,
+				AEC8DF5218D98A860088094D /* BXYeasts.m */,
+				AEC8DF5418D98A900088094D /* BXYeast.h */,
+				AEC8DF5518D98A900088094D /* BXYeast.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -239,12 +251,13 @@
 		AEEB8D9418C64921001ECA10 /* OCBeerXMLTests */ = {
 			isa = PBXGroup;
 			children = (
-				AEE009FC18C64C180042F849 /* OCBeerXmlHopsTests.m */,
-				AEE009FD18C64C180042F849 /* OCBeerXmlRecipeTests.m */,
-				AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */,
 				AE753FD018D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m */,
+				AE0BC98A18CDC4D500D5BD7E /* OCBeerXmlFermentablesTests.m */,
+				AEE009FC18C64C180042F849 /* OCBeerXmlHopsTests.m */,
 				AEC8DF4718D83C140088094D /* OCBeerXmlMiscsTests.m */,
+				AEE009FD18C64C180042F849 /* OCBeerXmlRecipeTests.m */,
 				AEC8DF4F18D97F1C0088094D /* OCBeerXmlWatersTests.m */,
+				AEC8DF5718D9935D0088094D /* OCBeerXmlYeastsTests.m */,
 				AEEB8D9518C64921001ECA10 /* Supporting Files */,
 			);
 			path = OCBeerXMLTests;
@@ -341,11 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC8DF5318D98A860088094D /* BXYeasts.m in Sources */,
 				AEE00A0918C64CFB0042F849 /* XmlReader.m in Sources */,
 				AEC8DF4B18D977DD0088094D /* BXWaters.m in Sources */,
 				AEC8DF4218D82AD50088094D /* BXMisc.m in Sources */,
 				AEC8DF4E18D977E70088094D /* BXWater.m in Sources */,
 				AE9C703B18CDAA81009FCE0B /* BXFermentable.m in Sources */,
+				AEC8DF5618D98A900088094D /* BXYeast.m in Sources */,
 				AE753FCB18D0416900EC9A2F /* BXEquipments.m in Sources */,
 				AEE00A0D18C6636B0042F849 /* BXStyle.m in Sources */,
 				AE753FCE18D0418000EC9A2F /* BXEquipment.m in Sources */,
@@ -371,6 +386,7 @@
 				AE753FD118D045A500EC9A2F /* OCBeerXmlEquipmentsTests.m in Sources */,
 				AEE009F518C64B7E0042F849 /* BXHops.m in Sources */,
 				AEC8DF4818D83C140088094D /* OCBeerXmlMiscsTests.m in Sources */,
+				AEC8DF5818D9935D0088094D /* OCBeerXmlYeastsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

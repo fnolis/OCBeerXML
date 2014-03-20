@@ -17,7 +17,7 @@
 @property (nonatomic, retain) BXFermentables *fermentables;
 @property (nonatomic, retain) BXWaters *waters;
 @property (nonatomic, retain) BXYeasts *yeasts;
-//...
+@property (nonatomic, retain) BXMash *mash;
 @property (nonatomic, retain) BXMiscs *miscellaneous;
 @property (nonatomic, retain) NSString *notes;
 @property (nonatomic, retain) NSString *tasteNotes;

@@ -19,7 +19,7 @@
 	self.sodium = [[self objectInDictionary:data forTag:BXTagWaterSodium required:YES error:error] floatValue];
 	self.magnesium = [[self objectInDictionary:data forTag:BXTagWaterMagnesium required:YES error:error] floatValue];
 	self.ph = [[self objectInDictionary:data forTag:BXTagWaterPh required:NO error:error] floatValue];
-	self.notes = [self objectInDictionary:data forTag:BXTagHopNotes required:NO error:error];
+	self.notes = [self objectInDictionary:data forTag:BXTagWaterNotes required:NO error:error];
 	
 	if( error && *error )
 		self = nil;

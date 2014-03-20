@@ -2,17 +2,19 @@
 #define BeerXml_XmlTags_h
 
 // MAIN TAGS
-#define BXTagRecipes @"RECIPES"
-#define BXTagRecipe @"RECIPE"
-#define BXTagHops @"HOPS"
-#define BXTagHop @"HOP"
-#define BXTagStyle @"STYLE"
-#define BXTagFermentables @"FERMENTABLES"
-#define BXTagFermentable @"FERMENTABLE"
 #define BXTagEquipments @"EQUIPMENTS"
 #define BXTagEquipment @"EQUIPMENT"
+#define BXTagFermentables @"FERMENTABLES"
+#define BXTagFermentable @"FERMENTABLE"
+#define BXTagHops @"HOPS"
+#define BXTagHop @"HOP"
+#define BXTagMash @"MASH"
+#define BXTagMashStep @"MASH_STEP"
 #define BXTagMiscs @"MISCS"
 #define BXTagMisc @"MISC"
+#define BXTagRecipes @"RECIPES"
+#define BXTagRecipe @"RECIPE"
+#define BXTagStyle @"STYLE"
 #define BXTagWaters @"WATERS"
 #define BXTagWater @"WATER"
 #define BXTagYeasts @"YEASTS"
@@ -116,6 +118,29 @@
 #define BXTagEquipmentTopUpKettle @"TOP_UP_KETTLE"
 #define BXTagEquipmentHopUtilization @"HOP_UTILIZATION"
 #define BXTagEquipmentNotes @"NOTES"
+
+// MASH
+#define BXTagMashName @"NAME"
+#define BXTagMashVersion @"VERSION"
+#define BXTagMashGrainTemp @"GRAIN_TEMP"
+#define BXTagMashMashSteps @"MASH_STEPS"
+#define BXTagMashNotes @"NOTES"
+#define BXTagMashTunTemp @"TUN_TEMP"
+#define BXTagMashSpargeTemp @"SPARGE_TEMP"
+#define BXTagMashPH @"PH"
+#define BXTagMashTunWeight @"TUN_WEIGHT"
+#define BXTagMashTunSpecificHeat @"TUN_SPECIFIC_HEAT"
+#define BXTagMashEquipmentAdjust @"EQUIP_ADJUST"
+
+// MASH STEP
+#define BXTagMashStepName @"NAME"
+#define BXTagMashStepVersion @"VERSION"
+#define BXTagMashStepType @"TYPE"
+#define BXTagMashStepInfuseAmount @"INFUSE_AMOUNT"
+#define BXTagMashStepStepTemp @"STEP_TEMP"
+#define BXTagMashStepStepTime @"STEP_TIME"
+#define BXTagMashStepRampTime @"RAMP_TIME"
+#define BXTagMashStepEndTemp @"END_TEMP"
 
 // HOP
 #define BXTagHopName @"NAME"

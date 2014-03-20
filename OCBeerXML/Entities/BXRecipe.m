@@ -27,7 +27,7 @@
 	self.miscellaneous = [BXMiscs miscsFromDictionary:[data objectForKey:BXTagMiscs] error:error];
 	self.yeasts = [BXYeasts yeastsFromDictionary:[data objectForKey:BXTagYeasts] error:error];
 	self.waters = [BXWaters watersFromDictionary:[data objectForKey:BXTagWaters] error:error];
-	// MASH
+	self.mash = [BXMash mashFromDictionary:[data objectForKey:BXTagMash] error:error];
 	self.notes = [self objectInDictionary:data forTag:BXTagRecipeNotes required:NO error:error];
 	self.tasteNotes = [self objectInDictionary:data forTag:BXTagRecipeTasteNotes required:NO error:error];
 	self.tasteRating = [[self objectInDictionary:data forTag:BXTagRecipeTasteRating required:NO error:error] floatValue];

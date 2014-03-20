@@ -18,6 +18,8 @@
 #import "BXEquipments.h"
 #import "BXFermentables.h"
 #import "BXHops.h"
+#import "BXMash.h"
+#import "BXMashStep.h"
 #import "BXMiscs.h"
 #import "BXStyle.h"
 #import "BXWaters.h"

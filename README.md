@@ -8,13 +8,13 @@ Usage
 Example:
 ```objc
 #import "OCBeerXML.h"
- 
+
 int main(int argc, char *argv[]) {
   NSError *error;
   NSString *xml = @"..."; // BeerXML data as string.
-   
+
   NSArray *recipies = [OCBeerXML parseRecipes:xml error:&error];
- 
+
   for(BXRecipe *recipe in recipes) {
       ...
   }

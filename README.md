@@ -1,4 +1,4 @@
-OCBeerXML v0.9
+OCBeerXML v1.0
 =========
 
 A simple to use BeerXML parser written in Objective-C.
@@ -24,9 +24,6 @@ int main(int argc, char *argv[]) {
 
 Roadmap
 --
-####Version 1.0####
-- Setup the library building scheme correct
-
 ####Version 1.1####
 - Add entity extensions (Appendix A)
 

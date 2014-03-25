@@ -1,4 +1,4 @@
-OCBeerXML v1.0
+OCBeerXML v1.0.1
 =========
 
 A simple to use BeerXML parser written in Objective-C.

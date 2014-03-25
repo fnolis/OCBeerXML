@@ -8,7 +8,7 @@
 		return [[data objectForKey:tag] objectForKey:@"text"];
 	else {
 		if( error && required )
-			*error = [NSError errorWithDomain:BeerXMLErrorDomain code:BeerXMLErrorRequiredTagMissing userInfo:[NSDictionary dictionaryWithObject:tag forKey:@"MissingTagData"]];
+			*error = [NSError errorWithDomain:BeerXMLErrorDomain code:BeerXMLErrorRequiredTagMissing userInfo:@{@"MissingTagData":tag, @"Entity":NSStringFromClass(self.class)}];
 		return nil;
 	}
 }

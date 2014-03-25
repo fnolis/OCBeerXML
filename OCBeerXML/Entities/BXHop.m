@@ -14,7 +14,7 @@
 	self.alpha = [[self objectInDictionary:data forTag:BXTagHopAlpha required:YES error:error] floatValue];
 	self.amount = [[self objectInDictionary:data forTag:BXTagHopAmount required:YES error:error] floatValue];
 	self.use = [self objectInDictionary:data forTag:BXTagHopUse required:YES error:error]; //! TODO: Validate value
-	self.time = [[self objectInDictionary:data forTag:BXTagHopTime required:YES error:error] intValue];
+	self.time = [[self objectInDictionary:data forTag:BXTagHopTime required:YES error:error] floatValue];
 	self.notes = [self objectInDictionary:data forTag:BXTagHopNotes required:NO error:error];
 	self.type = [self objectInDictionary:data forTag:BXTagHopType required:NO error:error]; //! TODO: Validate value
 	self.form = [self objectInDictionary:data forTag:BXTagHopForm required:NO error:error]; //! TODO: Validate value

@@ -24,10 +24,10 @@
 	self.maximumIBU = [[self objectInDictionary:data forTag:BXTagStyleIBUMax required:YES error:error] floatValue];
 	self.minimumColor = [[self objectInDictionary:data forTag:BXTagStyleColorMin required:YES error:error] floatValue];
 	self.maximumColor = [[self objectInDictionary:data forTag:BXTagStyleColorMax required:YES error:error] floatValue];
-	self.minimumCarbonation = [[self objectInDictionary:data forTag:BXTagStyleCarbMin required:YES error:error] floatValue];
-	self.maximumCarbonation = [[self objectInDictionary:data forTag:BXTagStyleCarbMax required:YES error:error] floatValue];
-	self.minimumABV = [[self objectInDictionary:data forTag:BXTagStyleABVMin required:YES error:error] floatValue];
-	self.maximumABV = [[self objectInDictionary:data forTag:BXTagStyleABVMax required:YES error:error] floatValue];
+	self.minimumCarbonation = [[self objectInDictionary:data forTag:BXTagStyleCarbMin required:NO error:error] floatValue];
+	self.maximumCarbonation = [[self objectInDictionary:data forTag:BXTagStyleCarbMax required:NO error:error] floatValue];
+	self.minimumABV = [[self objectInDictionary:data forTag:BXTagStyleABVMin required:NO error:error] floatValue];
+	self.maximumABV = [[self objectInDictionary:data forTag:BXTagStyleABVMax required:NO error:error] floatValue];
 	self.notes = [self objectInDictionary:data forTag:BXTagStyleNotes required:NO error:error];
 	self.profile = [self objectInDictionary:data forTag:BXTagStyleProfile required:NO error:error];
 	self.ingredients = [self objectInDictionary:data forTag:BXTagStyleIngredients required:NO error:error];
